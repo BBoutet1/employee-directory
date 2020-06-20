@@ -1,0 +1,48 @@
+[{
+        "id": 1,
+        "firstName": "John",
+        "lastName": "Doe",
+        "role": "Operations Manager",
+        "Department": "Production"
+    }, {
+        "id": 2,
+        "firstName": "Paulo",
+        "lastName": "Mendes",
+        "role": "Machinist",
+        "Department": "Production"
+    },
+    {
+        "id": 3,
+        "firstName": "Franck",
+        "lastName": "Olu",
+        "role": "Assembler",
+        "Department": "Production"
+    },
+    {
+        "id": 4,
+        "firstName": "Marie",
+        "lastName": "Jeanne",
+        "role": "HR Manager",
+        "Department": "Humar Ressources"
+    }, {
+        "id": 5,
+        "firstName": "Marc",
+        "lastName": "Dumas",
+        "role": "CEO",
+        "Department": "Executive"
+    },
+    {
+        "id": 6,
+        "firstName": "Pal",
+        "lastName": "Ghandi",
+        "role": "Receptionist",
+        "Department": "Human Ressources"
+    },
+    {
+        "id": 7,
+        "firstName": "Paulo",
+        "lastName": "Mendes",
+        "role": "CFO",
+        "Department": "Finance"
+    }
+]
