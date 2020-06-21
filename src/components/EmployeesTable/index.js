@@ -9,7 +9,13 @@ function employeesTable(props) {
             <div className="m-3">
                 <form className="search d-inline-block input-group m-3">
                     <div className="input-group">
-                        <input type="text" className="form-control" placeholder="Search"/>
+                        <input
+                            value={props.search}
+                            name="search"
+                            onChange={props.handleInputChange}
+                            id="search"
+                            type="text" className="form-control" placeholder="Search"
+                        />
                     </div>
                 </form>
                 <div className="filter d-inline-block input-group m-3">
