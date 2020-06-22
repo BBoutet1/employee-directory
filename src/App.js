@@ -43,12 +43,12 @@ state = {
     this.setState({
       sortBy: ID
     });
-     this.sortEmployees(this.state.sortBy)
+    //  this.sortEmployees(this.state.sortBy)
    };
   
-  sortEmployees(param) {
-    employees.sort((a, b) => (a[param] > b[param]) ? 1 : -1)
-  }
+  // sortEmployees(param) {
+  //   employees.sort((a, b) => (a[param] > b[param]) ? 1 : -1)
+  // }
 
   // Map over this.state.employees and render an employee row in the table for each employee object
   // All the search input and the employee property to lowercased to avoid case sensitive

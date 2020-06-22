@@ -39,11 +39,11 @@ function employeesTable(props) {
                 <table className="table mx-auto  mb-0  border">
                     <thead  className="thead-light">
                         <tr>
-                            <th><strong> ID</strong><i className="fa fa-sort-down ml-3" id="id"></i></th>
-                            <th> <strong>First Name</strong><i className="fa fa-sort-down ml-2" id="firstName"></i></th>
-                            <th><strong>Last Name </strong><i className="fa fa-sort-down ml-2" id="lastName"></i></th>
-                            <th><strong>Role</strong><i className="fa fa-sort-down ml-2" id="role"></i></th> 
-                            <th><strong>Department</strong><i className="fa fa-sort-down ml-2" id="department"></i></th> 
+                            <th><strong> ID</strong><i className="fa fa-sort-down ml-3" id="id" onClick={props.handleSortChange}></i></th>
+                            <th> <strong>First Name</strong><i className="fa fa-sort-down ml-2" id="firstName" onClick={props.handleSortChange}></i></th>
+                            <th><strong>Last Name </strong><i className="fa fa-sort-down ml-2" id="lastName" onClick={props.handleSortChange}></i></th>
+                            <th><strong>Role</strong><i className="fa fa-sort-down ml-2" id="role" onClick={props.handleSortChange}></i></th> 
+                            <th><strong>Department</strong><i className="fa fa-sort-down ml-2" id="department" onClick={props.handleSortChange}></i></th> 
                         </tr>
                     </thead>
                     <tbody>{props.children}</tbody> 
