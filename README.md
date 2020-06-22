@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Employee directory
 
-## Available Scripts
+React app for employees directory. This application's UI, broken down into `components` and managing component `state` responds to user event to search employee by name, role or department.
 
-In the project directory, you can run:
+## Table of contents
 
-### `npm start`
+<!-- ⛔️ MD-MAGIC-EXAMPLE:START (TOC:collapse=true&collapseText=Click to expand) -->
+<details>
+<summary>Click to expand table of contents</summary>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [Installation](#installation)
+* [Usage](#usage)
+* [Licence](#licence)
+* [Contributing](#contributing)
+* [Questions](#questions)
+* [Author information](#author-information)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+</details>
+<!-- ⛔️ MD-MAGIC-EXAMPLE:END -->
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run the following  command line
+```sh
+npm run start    
+```
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The user is presented with a table containing all the employees from the directory. While the user is typing inside the `search input` field, the employees table is filtered and updated in real time to contain  only employees that include the typed `search input` string in their first names initially. The user can change the filter type, from `first name` to `last name`, `role` or `department`, then the `search input` is mached within the column correstponding to the selected filter tye to print the filtered table.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
+[MIT](https://choosealicense.com/licenses/mit)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Feel free to make a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Questions
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Please, find author information and contact below.
 
-## Learn More
+## Author information
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| <img align="left" width="150" height="auto" margin="10"  src="https://avatars3.githubusercontent.com/u/59809722?v=4"> |  Brice Boutet <br/>  Email : [boutetlb@gmail.com](boutetlb@gmail.com)<br/> GitHub : [BBoutet1](https://github.com/bboutet1)<br> Blog:  [https://bboutet1.github.io/](https://github.com/https://bboutet1.github.io/) |
+| -------- | ----------- |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
