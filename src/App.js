@@ -62,7 +62,7 @@ state = {
           handleFilterChange={this.handleFilterChange}
           handleSortChange={this.handleSortChange}
         >
-           {this.state.employees.filter(employee => employee[this.state.filter].toLowerCase().includes(this.state.search.toLowerCase())).map(employee => (
+           {this.state.employees.sort((a, b) => (a[this.state.sortBy] > b[this.state.sortBy]) ? 1 : -1).filter(employee => employee[this.state.filter].toLowerCase().includes(this.state.search.toLowerCase())).map(employee => (
              <EmployeeRow 
             key={employee.id}
             id={employee.id}
