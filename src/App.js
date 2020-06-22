@@ -13,7 +13,7 @@ state = {
     employees,
     filter:"firstName", // Search filter match initialized to the firstName property(column)
     search: "", //search input
-    sortBy:"id" // sorting column
+    sortBy:"id" // table initially sorted by employee id
   };
 
   //This function handle the search filter type change
@@ -26,8 +26,8 @@ state = {
   }
 
   //This function handle the search input change
-   handleInputChange = event => {
-    // Getting the value and name of the input which triggered the change
+  handleInputChange = event => {
+    // Getting the value of the search input which triggered the change
     let value = event.target.value;
     // Updating the input's state
     this.setState({
@@ -35,25 +35,17 @@ state = {
     });
    };
   
-    //This function handle the search input change
+    //This function handle the sort category change
    handleSortChange = event => {
-    // Getting the value and name of the input which triggered the change
+    // Getting the name (id) of the sorted column
     let ID = event.target.id;
     // Updating the input's state
     this.setState({
       sortBy: ID
     });
-    //  this.sortEmployees(this.state.sortBy)
    };
-  
-  // sortEmployees(param) {
-  //   employees.sort((a, b) => (a[param] > b[param]) ? 1 : -1)
-  // }
 
-  // Map over this.state.employees and render an employee row in the table for each employee object
-  // All the search input and the employee property to lowercased to avoid case sensitive
   render() {
-    console.log(this.state.sortBy)
     return (
       <Wrapper>
       <Title>Employee directory</Title>
