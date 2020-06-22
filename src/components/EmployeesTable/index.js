@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-
+//Component for the employees table
 function employeesTable(props) {
     
     return (

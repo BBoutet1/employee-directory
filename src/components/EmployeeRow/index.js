@@ -1,5 +1,6 @@
 import React from "react";
 
+//Component for each employee
 function employeeRow(props) {
     return (
         <tr>
