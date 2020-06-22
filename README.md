@@ -1,6 +1,6 @@
 # Employee directory
 
-React app for employees directory. This application's UI, broken down into `components` and managing component `state` responds to user event to search employee by name, role or department.
+React app for employees directory. This application's UI, broken down into `components` and managing component `state` responds to user event to search or sort employees by name, role or department.
 
 ## Table of contents
 
@@ -27,8 +27,10 @@ npm run start
 
 ## Usage
 
-The user is presented with a table containing all the employees from the directory. While the user is typing inside the `search input` field, the employees table is filtered and updated in real time to contain  only employees that include the typed `search input` string in their first names initially. The user can change the filter type, from `first name` to `last name`, `role` or `department`, then the `search input` is mached within the column correstponding to the selected filter tye to print the filtered table.
-
+* When the page loads, the user is presented with a table containing all the employees from the directory. 
+* When the user is typing a `search input`, the employees table is filtered and updated in real time printing only employees that the information in the filtered column includes the string typed string. 
+* The user can change the filter type (column to filter), from `first name` to `last name`, `role` or `department`, then the `search input`.
+* When the user click on the sort down arrows, the table is sorted based on the clicked column.
 
 ## License
 
