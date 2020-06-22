@@ -22,10 +22,16 @@ function employeesTable(props) {
                     <div className="d-inline-block input-group-prepend">
                         <label className="input-group-text">Filter by...</label>
                     </div>
-                    <select className="custom-select d-inline-block" id="filter">
-                        <option value="name">Name</option>
-                        <option value="role">role</option>
-                        <option value="department">role</option>
+                    <select
+                        value={props.filter}
+                        name="filter"
+                        onChange={props.handleFilterChange}
+                        id="filter"
+                        className="custom-select d-inline-block">
+                        <option value="firstName">First Name</option>
+                        <option value="lastName">Last Name</option>
+                        <option value="role">Role</option>
+                        <option value="department">Department</option>
                     </select>
                 </div>
             </div>

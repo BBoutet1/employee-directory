@@ -5,56 +5,43 @@ import EmployeeRow from "./components/EmployeeRow";
 import employees from "./employees.json";
 import Title from "./components/Title";
 
-class App extends Component {
-// state = {
-//     employees,
-//     filters: {
-//       firstName: true,
-//       lastName: true,
-//       role: true,
-//       department:true
-//     },
-//     filterBy: "",
-//     search:""
-//   };
 
-   constructor(props) {
-    super(props);
-    this.state = {
-     employees,
-    filters: {
-      firstName: true,
-      lastName: true,
-      role: true,
-      department:true
-    },
-    filterBy: "",
-    search:""
-    };
-    // this.sortColumn = this.sortColumn.bind(this);
-    // this.handleFilterChange = this.handleFilterChange.bind(this);
+class App extends Component {
+  
+// Setting the component's initial state
+state = {
+    employees,
+    filter:"firstName", // Search filter match initialized to the firstName property(column)
+    search:"" //search input
+  };
+
+  //This function handle the search filter type change
+  handleFilterChange = event => {
+    let value = event.target.value;
+    // Updating the input's state
+    this.setState({
+      filter: value // filter 
+    });
   }
 
+  //This function handle the search input change
    handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.value;
-     const name = event.target.name;
-     console.log(name,value)
     // Updating the input's state
     this.setState({
-      [name]: value
+      search: value
     });
   };
 
-  // Map over this.state.employees and render a FriendCard component for each friend object
+  // Map over this.state.employees and render an employee row in the table for each employee object
+  // All the search input and the employee property to lowercased to avoid case sensitive
   render() {
-     console.log(this.state)
     return (
       <Wrapper>
       <Title>Employee directory</Title>
-        <EmployeesTable 
-            handleInputChange = {this.handleInputChange}>
-           {this.state.employees.filter(employee => employee.firstName.includes(this.state.search)).map(employee => (
+        <EmployeesTable handleInputChange={this.handleInputChange} handleFilterChange={this.handleFilterChange}>
+           {this.state.employees.filter(employee => employee[this.state.filter].toLowerCase().includes(this.state.search.toLowerCase())).map(employee => (
              <EmployeeRow 
             key={employee.id}
             id={employee.id}
