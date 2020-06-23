@@ -18,3 +18,7 @@
 label {
     width: 100px;
 }
+
+.fa-sort-down:hover {
+    color: hotpink;
+}

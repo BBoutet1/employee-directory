@@ -1,6 +1,6 @@
 # Employee directory
 
-React app for employees directory. This application's UI, broken down into `components` and managing component `state` responds to user event to search or sort employees by name, role or department.
+This app is an employee directory build with `React`. The application's UI is broken down into `components` with a component `state` to respond to user events, searching or sorting employees by name, role or department.
 
 ## Table of contents
 
